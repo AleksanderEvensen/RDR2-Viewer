@@ -1,0 +1,26 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+    "files": { "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**"] },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "lineWidth": 120
+    },
+    "organizeImports": { "enabled": false },
+
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "defaultBranch": "main",
+        "useIgnoreFile": true
+    },
+
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": false
+        }
+    }
+}
