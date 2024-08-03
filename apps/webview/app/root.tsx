@@ -1,6 +1,4 @@
-import React from "react";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
-
 import "./tailwind.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -23,4 +21,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
     return <Outlet />;
+}
+
+export function HydrateFallback() {
+    return <p>Loading...</p>;
 }

@@ -8,6 +8,13 @@
         "lineEnding": "lf",
         "lineWidth": 120
     },
+
+    "css": {
+        "formatter": {
+            "enabled": true
+        }
+    },
+
     "organizeImports": { "enabled": false },
 
     "vcs": {
