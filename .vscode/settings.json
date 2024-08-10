@@ -10,5 +10,7 @@
     },
     "[json]": {
         "editor.defaultFormatter": "biomejs.biome"
-    }
+    },
+
+    "rust-analyzer.linkedProjects": ["${workspaceFolder}/apps/datafile-parser/Cargo.toml"]
 }
