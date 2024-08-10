@@ -1,4 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
+import React from "react";
+import { ClientOnly } from "remix-utils/client-only";
+
+const LazyMap = React.lazy(() => import("../components/map"));
 
 export const meta: MetaFunction = () => {
     return [{ title: "New Remix SPA" }, { name: "description", content: "Welcome to Remix (SPA Mode)!" }];
@@ -30,6 +34,7 @@ export default function Index() {
                     </a>
                 </li>
             </ul>
+            <ClientOnly fallback={<p>Loading...</p>}>{() => <LazyMap />}</ClientOnly>
         </div>
     );
 }
