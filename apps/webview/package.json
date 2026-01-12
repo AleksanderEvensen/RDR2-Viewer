@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "@remix-run/node": "^2.10.3",
-        "@remix-run/react": "^2.10.3",
+        "@remix-run/react": "^2.17.3",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
         "leaflet": "^1.9.4",
